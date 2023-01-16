@@ -1,0 +1,43 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 0 17px;*/
+}
+.list {
+    display: flex;
+    gap: 0 20px;
+}
+.list-item a {
+    color: black;
+}
+.link {
+    color: black;
+    font-family: Roboto;
+    font-size: 16px;
+}
+.buttons-list {
+    display: flex;
+    gap: 14px;
+    font-family: Roboto;
+    width: 354px;
+    /*height: 40px;*/
+    /*background-color: aquamarine;*/
+}
+.btn {
+    background-color: #EF7F04;
+    gap: 13px;
+    font-size: 13px;
+    color: #ffffff;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 17px;
+    width: 170px;
+}
+.btn-black {
+    background-color: #3B3A63;
+}
+.btn-icon {
+    max-width: 20px;
+}
