@@ -5,38 +5,127 @@
     font-size: 24px;
     padding: 48px 10px;
 }
-.services_block {
+.services__block {
     display: flex;
     font-family: Roboto;
     flex-wrap: wrap;
     gap: 10px;
 }
-.service_item {
+.service__item {
     width: 595px;
     height: 268px;
     border-radius: 3px;
 }
-.service_header {
+.service__header {
     display: flex;
     align-items: center;
 }
-.service_icon {
+.service__icon {
     width: 63px;
 }
-.service_title {
+.service__title {
     margin-left: 27px;
     max-width: 300px;
     font-size: 24px;
     font-weight: 700;
     color: #2F2F51;
 }
-.service_text {
+.service__text {
     width: 303px;
     margin-top: 30px;
     color: #2F2F51;
 }
-.service_content {
+.service__content {
     padding: 53px;
     height: 100%;
     background: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%);
+}
+.about-menu {
+    margin: 0 auto 35px;
+    width: fit-content;
+    display: flex;
+    gap: 0 30px;
+}
+.about-menu__link {
+    color: black;
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 700;
+}
+.about-company {
+    display: flex;
+}
+.about-company_icon {
+    width: 199px;
+    height: 140px;
+
+}
+.about-company_text {
+    align-self: end;
+    height: auto;
+    line-height: 22px;
+}
+.about-company_description {
+    display: flex;
+    padding: 52px;
+    width: 50%;
+    background-color: #ffffff;
+
+}
+.about-company_image {
+    width: 50%;
+}
+.footer {
+    height: 146px;
+    background-color: #2F2F51;
+    margin-top: 50px;
+
+}
+.advantage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13px;
+    padding: 70px 50px;
+}
+.advantage-item {
+    /*display: flex;*/
+    line-height: 26px;
+    font-weight: 700;
+    width: 350px;
+}
+.advantage-item__icon {
+    float: left;
+    box-sizing: content-box;
+    padding: 23px;
+    width: 100px;
+}
+.advantage-item__header {
+    text-transform: uppercase;
+    /*line-height: 26px;*/
+    /*font-weight: 700;*/
+    color: #2F2F51;
+    padding-top: 19px;
+}
+.advantage-item__paragraph {
+    color: #000000;
+
+}
+.advantage-request {
+    text-align: center;
+    color: #FFFFFF;
+}
+.advantage-request__icon {
+    max-width: 20px;
+    padding-right: 10px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+.advantage-request__button {
+    background-color: #EF7F04;
+    color: #ffffff;
+    border-radius: 3px;
+    align-items: center;
+    padding: 18px;
+    width: 312px;
 }
