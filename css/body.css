@@ -44,13 +44,19 @@
     margin: 0 auto 35px;
     width: fit-content;
     display: flex;
-    gap: 0 30px;
+    gap: 0 15px;
 }
 .about-menu__link {
     color: black;
     font-family: Roboto;
     font-size: 21px;
     font-weight: 700;
+    padding: 9px 25px;
+}
+.about-menu__link:hover {
+    background-color: #EF7F04;
+    color: #FFFFFF;
+    border-radius: 3px;
 }
 .about-company {
     display: flex;
