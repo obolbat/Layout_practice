@@ -8,13 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/./reset.css">
     <link rel="stylesheet" href="css/./base.css">
+    <link rel="stylesheet" href="css/./prof-approac.css">
     <link rel="stylesheet" href="css/./body.css">
     <link rel="stylesheet" href="css/./header.css">
 </head>
 <body class="body">
     <header class="header">
         <div class="container header-wrapper">
-            <img src="./images/logo1.svg" alt="Logo">
+            <div class="logo-burger">
+                <img class="burger" src="./images/burger.svg" alt="Burger">
+                <img class="logo" src="./images/logo1.svg" alt="Logo">
+            </div>
             <nav>
                 <ul class="list">
                     <li class="list-item">
@@ -50,6 +54,51 @@
         </div>
     </header>
 
+    <section class="prof-approach">
+        <div class="container">
+            <div class="prof-approach__block">
+                <div class="prof-approach__info">
+                    <div class="prof-approach__par">
+                        <h3 class="prof-approach__par__h3">Окна Хаус - </h3>
+                        <p class="prof-approach__par__p">Профессиональный подход к остеклению</p>
+                    </div>
+                    <div class="prof-approach__descript">
+                    <div class="prof-approach__item">
+                        <img src="./images/icon_pa1.svg" alt="Современный подход" class="prof-approach__img">
+                        <p class="prof-approach__text">Современные окна и балконные конструкции по доступным ценам</p>
+                    </div>
+                    <div class="prof-approach__item">
+                        <img src="./images/icon_pa2.svg" alt="Квалифицированный подход" class="prof-approach__img">
+                        <p class="prof-approach__text">Квалифицированный подход к решению задач любой сложности</p>
+                    </div>
+                    <div class="prof-approach__item">
+                        <img src="./images/icon_pa3.svg" alt="Гарантия" class="prof-approach__img">
+                        <p class="prof-approach__text">Гарантия высочайшего качества нашей продукции</p>
+                    </div>
+                </div>
+                </div>
+                <div class="input_wrapper prof-approach__form">
+                    <h3 class="input_wrapper_zamer">Вызвать замершика на дом</h3>
+                    <form action="index.html" method="post">
+                        <div class="input_wrapper__text">
+                            <input type="name" placeholder="Представьтесь, пожалуйста">
+                        </div>
+                        <div class="input_wrapper__text">
+                            <input type="tel" placeholder="Номер телефона">
+                        </div>
+                        <div class="input_wrapper__text">
+                            <input type="tel" placeholder="E-mail">
+                        </div>
+                        <input class="input-checkbox" id="checkbox" type="checkbox" checked >
+                        <label class="input-checkbox__label" for="checkbox">Согласен на обработку персональных данных
+                            в соответствии <a href="#">с политикой конфиденциальности</a></label>
+                        <button class="wrapper">Отправить заявку</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <section class="container">
         <h2 class="services-title">Наши услуги</h2>
         <div class="services__block">
