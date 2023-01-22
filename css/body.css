@@ -145,3 +145,6 @@
     padding: 18px;
     width: 312px;
 }
+.advantage-request__button:hover {
+    opacity: 0.5;
+}
