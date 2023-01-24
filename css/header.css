@@ -59,6 +59,9 @@
 .btn-black {
     background-color: #3B3A63;
 }
+.btn:hover {
+    opacity: 0.5;
+}
 .btn-icon {
     max-width: 20px;
 }
