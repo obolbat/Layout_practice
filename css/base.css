@@ -33,6 +33,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url("../images/fon.jpg");
 }
 .container {
     display: flex;
