@@ -8,6 +8,16 @@
     url('../fonts/Roboto-Regular.ttf')
     format("ttf");
 }
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Roboto"),
+    local("Roboto-Regular"),
+    url('../fonts/Roboto-Regular.ttf')
+    format("ttf");
+}
 
 /* cyrillic */
 @font-face {
@@ -30,15 +40,16 @@ body {
     max-width: 100%;
 }
 /*992 - работает*/
-@media (max-width: 992px) and  (min-width: 541px) {
+@media (max-width: 992px) {
     .container {
         width: 100%;
     }
 }
-/*адаптация для 540px не работает, блок info не выравнивается под фото*/
+/*адаптация для 540px работает*/
 @media (max-width: 540px) {
     .container {
         width: 100%;
         display: block;
+        padding: 0 75px;
     }
 }
