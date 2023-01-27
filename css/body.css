@@ -42,16 +42,18 @@
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
-    font-size: calc( (100vw - 993px)/(1920 - 993) * (64 - 43) + 43px);
+    font-size: calc( (100vw - 541px)/(1920 - 541) * (64 - 21) + 21px);
     font-weight: 400;
     background-color: #121212;
-    padding: 10px 20px;
+    padding: 12px 20px;
 }
 .foto {
     width: 34%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: start;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 .foto__img {
     max-width: 100%;
@@ -90,8 +92,9 @@
 }
 .info-stack__item:hover {
     opacity: 0.5;
-    /*background: gold;*/
-    outline: dotted #25D366;
+    box-shadow: 20px -15px #A9A9A9;
+    outline: dotted #414141;
+    cursor: none;
 }
 .info-about-me {
     font-size: 32px;
@@ -103,10 +106,10 @@
     display: flex;
     padding-top: 50px;
     gap: 25px;
+    font-size: 32px;
 }
 
 input::placeholder {
-    font-size: 32px;
     color: #121212;
 }
 
@@ -131,11 +134,17 @@ input::placeholder {
     font-weight: 500;
 }
 .info__button:hover {
-    opacity: 0.5;
+    background-color: #414141;
+}
+.info__button:active {
+    background-color: #1E1E1E;
 }
 
 /*адаптация для 992px*/
 @media (max-width: 992px) {
+    .info {
+        padding: 15px 40px;
+    }
     .info-title {
         font-size: 32px;
         line-height: 38px;
@@ -145,42 +154,105 @@ input::placeholder {
         line-height: 23px;
     }
     .foto {
-        max-width: 37%;
+        width: 37%;
+        justify-content: end;
+    }
+    .info-stack-list {
+        gap: 20px;
     }
     .info-stack {
         font-size: 24px;
+        padding: 30px 0 20px;
     }
     .info-stack__item {
         font-size: 24px;
+        padding: 10px 45px;
     }
     .info-about-me {
+        line-height: 23px;
         font-size: 20px;
+        padding-top: 30px;
     }
-
+    .info-about-me h2 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    .info-about-me p {
+        text-indent: 24px;
+        padding-top: 10px;
+    }
+    .info__input {
+        padding-top: 20px;
+    }
+    .info__input__item {
+        font-size: 24px;
+        padding: 10px 16px;
+    }
     .info__button {
         font-size: 24px;
+        margin-top: 20px;
     }
-
+    .info-media__list {
+        padding-top: 30px;
+    }
 
 }
 /*адаптация для 540px не работает*/
 @media (max-width: 540px) {
-    .info-title {
-        font-size: 24px;
-        line-height: 28px;
+
+    .foto {
+        width:100%;
+    }
+    .info {
+        padding: 15px 0;
+    }
+    .info-feedback {
+        max-width: unset;
+    }
+    .developer {
+        font-weight: 400;
     }
     .info-city {
         font-size: 18px;
-        line-height: 21px;
+        padding-top: 10px;
     }
-
     .info-media__list {
-        max-width: 32px;
-        max-height: 32px;
+        padding-top: 16px;
     }
-
-    .foto {
-        max-width:100%;
+    .info-media__list > img {
+        width: 32px;
+        height: 32px;
     }
-
+    .info-stack {
+        font-size: 20px;
+        padding: 16px 0 10px;
+        font-weight: 500;
+    }
+    .info-stack-list {
+        gap: 10px 20px;
+    }
+    .info-stack__item {
+        font-size: 16px;
+        padding: 8px 35px;
+    }
+    .info-about-me {
+        line-height: 18px;
+        font-size: 16px;
+        padding-top: 16px;
+    }
+    .info-about-me h2 {
+        font-size: 20px;
+    }
+    .info__input {
+        padding-top: 16px;
+    }
+    .info__input__item {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .info__button {
+        font-size: 16px;
+        margin-top: 16px;
+        height: 35px;
+    }
 }
