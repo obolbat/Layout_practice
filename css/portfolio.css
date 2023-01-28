@@ -31,6 +31,9 @@
     .portfolio_img_none{
         display: none;
     }
+    .faq {
+       margin: 0 56px;
+    }
 }
 .faq {
     background-color: #EF7F04;
